@@ -154,6 +154,14 @@ const Navbar = () => {
         }
       </div>
 
+      <button
+      className='block lg:hidden text-slate-900'
+      onClick={() => setIsOpen((prev) => !prev)}
+      >
+        {isOpen ? <AiOutlineClose size={26} /> :
+        <HiMenuAlt3 size={26} />}
+      </button>
+
     </nav>
 
     {/* MOBILE-MENU */}
